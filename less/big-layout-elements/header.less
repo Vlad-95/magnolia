@@ -1,0 +1,66 @@
+.header {
+    padding: 20px 0 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    &__wrap {
+        display: grid;
+        grid-template-columns: 323px auto 188px;
+        position: relative;
+    }
+
+    .logos {
+        align-self: center;
+        display: flex;
+        align-items: flex-start;
+
+        .logo_big {
+            max-width: 148px;
+        }
+
+        .logo_small {
+            max-width: 102px;
+            margin-left: 6px;
+            margin-top: 12px;
+        }
+    }
+
+    .nav {
+        align-self: center;
+        margin-left: auto;
+        margin-top: -18px;
+        margin-right: 25px;
+
+        &__item {
+            color: @green;
+            font-size: 17px;
+            font-family: @futurafuturis;
+            font-weight: 400;
+            border: 2px solid @white;
+            border-radius: 100px;
+            padding: 8px 15px;
+
+            &:not(:first-of-type) {
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .phone {
+        align-self: center;
+        font-family: @futurafuturis;
+        color: @green;
+        font-weight: 700;
+        font-size: 25px;
+        margin-top: -18px;
+    }
+
+    .burger {
+        position: absolute;
+        display: none;
+    }
+}
+

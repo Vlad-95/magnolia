@@ -1,0 +1,126 @@
+.product {
+    padding: 70px 0;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: minmax(min-content, 30%) minmax(min-content, 70%)
+    }
+
+    &__title {
+        align-self: start;
+        font-size: 50px;
+        font-weight: 400;
+        color: @green;
+        margin: 128px 0 57px;
+        line-height: 1.1;
+    }
+
+    &__booklet {
+        align-self: start;
+        margin-bottom: 51px;
+    }
+
+    &__btn {
+        align-self: start;
+        font-size: 17px;
+        color: @green;
+        border: 3px solid @white;
+        border-radius: 100px;
+        padding: 7px 15px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding-top: 59px;
+        padding-left: 15px;
+    }
+
+    &__item {
+        width: 230px;
+        height: 200px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .hexagon {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+
+            polygon {
+                fill: transparent;
+                stroke-width: 4;
+                stroke: @green;
+                transition: 0.3s;
+            }
+        }
+
+        .icon {
+            fill: @green;
+            transition: 0.3s;
+        }
+
+        &_empty {
+            opacity: 0.2;
+            position: absolute;
+
+            .hexagon {
+                polygon {
+                    fill: none;
+                }
+            }
+
+            &:nth-of-type(1) {
+
+            }
+        }
+
+        &:not(.product__item_empty) {
+            &:nth-of-type(1) {
+                transform: translateY(219px);
+            }
+
+            &:nth-of-type(2) {
+                transform: translateY(110px) translateX(-41px);
+            }
+            
+            &:nth-of-type(3) {
+                transform: translateY(0) translateX(-81px);
+            }
+
+            &:nth-of-type(4) {
+                transform: translateY(239px) translateX(0px);
+            }
+
+            &:nth-of-type(5) {
+                transform: translateY(129px) translateX(-41px);
+            }
+
+            &:nth-of-type(6) {
+                transform: translateY(18px) translateX(-81px);
+            }
+
+            &:nth-of-type(7) {
+                margin-left: auto;
+                transform: translateY(-71px) translateX(2px);
+            }
+
+            &:hover {
+                .hexagon {
+                    polygon {
+                        fill: @green;
+                    }
+                }
+
+                .icon {
+                    fill: @white;
+                }
+            }
+        }
+        
+    }
+}

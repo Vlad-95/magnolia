@@ -1,0 +1,72 @@
+/*=====================
+  Базовая типография
+=====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+@font-face {
+  font-family: 'futura-futuris';
+  src: url('../fonts/FuturaFuturis/FuturaFuturisC.woff?eo4p0s#iefix') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-futuris';
+  src: url('../fonts/FuturaFuturis/FuturaFuturisLightC.woff?eo4p0s#iefix') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura-futuris';
+  src: url('../fonts/FuturaFuturis/FuturaFuturisC-Bold.woff?eo4p0s#iefix') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@opensans: 'Open Sans', sans-serif;
+@futurafuturis: 'futura-futuris', sans-serif;
+
+body {
+  font-family: @futurafuturis;  
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: @white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+& img {
+  max-width: 100%;
+}
+
+h1 {
+  
+}
+
+h2 {
+
+}
+
+p,
+li {
+  // font-size: 15px;
+  line-height: 1.2;
+  
+}
+
+li {
+  // font-size: 17px;
+  line-height: 24px;
+}
+
+p:last-child,
+li:last-child {
+  margin-bottom: 0;
+}

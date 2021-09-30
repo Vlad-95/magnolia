@@ -1,0 +1,54 @@
+body {
+  transition: 0.3s;
+  background-color: @bg;
+  position: relative;
+  
+  &.no-scroll {
+    overflow: hidden;
+  }
+  &.opacity-layer {
+    position: relative;
+    transition: 0.3s;
+
+    &:after {
+      content: '';
+      background-color: rgb(9, 36, 77);
+      opacity: 0.902;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      transition: 0.3s;
+    }    
+  }
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+// @media (min-width: 576px) {
+//     .wrapper {
+//         width: 576px;
+//     }
+// }
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
