@@ -13,10 +13,14 @@
             <div class="header__wrap">
                 <div class="logos">
                     <a href="index.html" class="logo logo_big">
-                        <img src="img/logo_magnolia.png" alt="">
+                        <svg width="148" height="108">
+                            <use xlink:href="img/icons/sprite.svg#logo_magnolia"></use>
+                        </svg>
                     </a>
                     <a href="index.html" class="logo logo_small">
-                        <img src="img/logo_alkor.png" alt="">
+                        <svg width="102" height="24">
+                            <use xlink:href="img/icons/sprite.svg#logo_alkor"></use>
+                        </svg>
                     </a>
                 </div>
 
@@ -75,8 +79,8 @@
 
         <section class="numbers">
             <div class="wrapper">
-                <div class="numbers__wrap">
-                    
+                <div class="numbers__wrap" id="container">
+                    <canvas id="canvas"></canvas>
                 </div>
             </div>
         </section>
@@ -104,6 +108,8 @@
                             <svg width="85" height="83" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#reagents"></use>
                             </svg>
+
+                            <p class="name">Реагенты</p>
                         </div>
 
                         <div class="product__item">
@@ -114,6 +120,8 @@
                             <svg width="90" height="72" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#analisator"></use>
                             </svg>
+
+                            <p class="name">Анализатор</p>
                         </div>
 
                         <div class="product__item">
@@ -124,6 +132,8 @@
                             <svg width="72" height="90" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#phase"></use>
                             </svg>
+
+                            <p class="name">Твердая фаза</p>
                         </div>
                         
                         <div class="product__item">
@@ -133,6 +143,7 @@
                             <svg width="80" height="85" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#technology"></use>
                             </svg>
+                            <p class="name">Технология</p>
                         </div>
 
                         <div class="product__item">
@@ -143,6 +154,8 @@
                             <svg width="91" height="90" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#service"></use>
                             </svg>
+
+                            <p class="name">Сервис</p>
                         </div>
 
                         <div class="product__item">
@@ -153,6 +166,8 @@
                             <svg width="90" height="66" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#soft"></use>
                             </svg>
+
+                            <p class="name">Програмное обеспечение</p>
                         </div>
 
                         <div class="product__item">
@@ -163,6 +178,8 @@
                             <svg width="82" height="63" class="icon">
                                 <use xlink:href="img/icons/sprite.svg#expendable"></use>
                             </svg>
+
+                            <p class="name">Расходные материалы</p>
                         </div>
 
                         <div class="product__item product__item_empty">
@@ -188,122 +205,278 @@
                 
             </div>
         </section>
-    </main>
-    <!-- <footer class="footer">
-        <div class="footer__top">
-            <div class="wrapper">
-                <div class="footer__wrap">
-                    <a href="index.html" class="footer__logo">
-                        <img src="img/logo.png" alt="">
-                    </a>
 
-                    <div class="footer__contacts">
-                        <a href="javascript:;" class="footer__phone">+7 (812) 677-87-79</a>
-                        <a href="javascript:;" class="footer__mail">info@alkorbio.ru</a>
-                        <p class="footer__address">192148, Saint-Petersburg Zheleznodorozhny pr. 40 A</p>
+        <section class="product-detail">
+            <div class="wrapper">
+                <div class="product-detail__wrap">
+                    <div class="product-detail__content">
+                        <h2 class="product-detail__title">Реагенты</h2>
+
+                        <div class="wysiwig">
+                            <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+
+                            <ul>
+                                <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                            </ul>
+
+                            
+                        </div>
+
+                        <div class="product-detail__btns">
+                            <a href="javascript:;" class="order">
+                                Заказать
+
+                                <svg width="20" height="14" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                </svg>
+                            </a>
+
+                            <a href="javascript:;" class="close">
+                                Закрыть
+
+                                <svg width="14" height="14" class="icon">
+                                    <use xlink:href="img/icons/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="footer__block">
-                        <ul class="footer__menu">
-                            <li class="footer__menu-item">
-                                <a href="catalog(ELISA).html" class="footer__menu-link">Catalog</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="about.html" class="footer__menu-link">About us</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="news.html" class="footer__menu-link">News</a>
-                            </li>
-                            <li class="footer__menu-item">
-                                <a href="contact.html" class="footer__menu-link">Contact us</a>
-                            </li>
-                        </ul>
-
-                        <a href="javascript:;" class="footer__download">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            
-                            <rect y="0" fill="none" width="24" height="24"/>
-                            <path fill="#FFFFFF" d="M17.099,13.356c-0.926-0.729-1.806-1.478-2.392-2.063c-0.762-0.762-1.44-1.5-2.03-2.203C13.597,6.247,14,4.781,14,4
-                                c0-3.319-1.199-4-3-4C9.632,0,8,0.711,8,4.096C8,5.588,8.817,7.4,10.438,9.505c-0.396,1.21-0.862,2.605-1.386,4.179
-                                c-0.252,0.755-0.525,1.454-0.815,2.101c-0.235,0.105-0.464,0.211-0.685,0.321c-0.795,0.397-1.55,0.755-2.25,1.087
-                                C2.109,18.704,0,19.704,0,21.679C0,23.112,1.558,24,3,24c1.859,0,4.667-2.483,6.718-6.667c2.129-0.84,4.775-1.462,6.864-1.852
-                                C18.256,16.769,20.104,18,21,18c2.479,0,3-1.434,3-2.636C24,13,21.299,13,20,13C19.597,13,18.515,13.119,17.099,13.356z M3,22
-                                c-0.571,0-0.958-0.27-1-0.321c0-0.709,2.114-1.711,4.159-2.68c0.13-0.062,0.262-0.123,0.396-0.187C5.053,20.99,3.567,22,3,22z
-                                M10,4.096C10,2,10.65,2,11,2c0.707,0,1,0,1,2c0,0.422-0.281,1.477-0.796,3.123C10.419,5.914,10,4.878,10,4.096z M10.767,14.844
-                                c0.063-0.174,0.123-0.35,0.182-0.527c0.371-1.113,0.705-2.113,1.003-3.014c0.415,0.457,0.862,0.925,1.342,1.404
-                                c0.188,0.188,0.652,0.609,1.272,1.138C13.332,14.113,12.021,14.446,10.767,14.844z M22,15.364c0,0.449,0,0.636-0.928,0.642
-                                c-0.272-0.059-0.902-0.43-1.68-0.959C19.675,15.016,19.883,15,20,15C21.478,15,21.897,15.145,22,15.364z"/>
-                            </svg>
-                            Download product catalog
-                        </a>
+                    <div class="product-detail__img">
+                        <img src="img/product-detail.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="footer__bottom">
+        <section class="advantages">
             <div class="wrapper">
-                <div class="footer__wrap">
-                    <div class="footer__links">
-                        <a href="javascript:;" class="footer__links-item">Sitemap</a>
-                        <a href="javascript:;" class="footer__links-item">Privacy policy</a>
+                <div class="advantages__wrap">
+                    <div class="advantages__item advantages__item_main">
+                        <svg width="154" height="89" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#advantages_main"></use>
+                        </svg>
+
+                        <h2 class="advantages__title">Преимущества <strong>MagnoLIA</strong></h2>
+                    </div>
+
+                    <div class="advantages__item">
+                        <p class="text">Оперативное получение <strong>результатов</strong></p>
+
+                        <div class="btn">
+                            <span></span><span></span>
+                        </div>
+
+                        <svg width="91" height="78" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#advantages_one"></use>
+                        </svg>
+                    </div>
+
+                    <div class="advantages__item">
+                        <p class="text"><strong>Бесперебойная</strong> работа анализатора</p>
+
+                        <div class="btn">
+                            <span></span><span></span>
+                        </div>
+
+                        <svg width="78" height="78" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#advantages_two"></use>
+                        </svg>
+                    </div>
+
+                    <div class="advantages__item">
+                        <p class="text"><strong>Точные и надежные</strong> результаты исследований</p>
+
+                        <div class="btn">
+                            <span></span><span></span>
+                        </div>
+
+                        <svg width="72" height="93" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#advantages_three"></use>
+                        </svg>
+                    </div>
+
+                    <div class="advantages__item">
+                        <p class="text">Собственное <strong>производство</strong> расходных материалов</p>
+
+                        <div class="btn">
+                            <span></span><span></span>
+                        </div>
+
+                        <svg width="82" height="63" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#expendable"></use>
+                        </svg>
+                    </div>
+
+                    <div class="advantages__item">
+                        <p class="text"><strong>Простота и удобство</strong> использования</p>
+
+                        <div class="btn">
+                            <span></span><span></span>
+                        </div>
+
+                        <svg width="68" height="92" class="icon">
+                            <use xlink:href="img/icons/sprite.svg#advantages_four"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="payments">
+            <div class="wrapper">
+                <h2 class="payments__title">Варианты оплаты <strong>MagnoLIA</strong></h2>
+                <div class="payments__wrap">
+                    <div class="payments__item">
+                        <div class="icon">
+                            <svg width="66" height="66">
+                                <use xlink:href="img/icons/sprite.svg#payment_one"></use>
+                            </svg>
+                        </div>
+
+                        <h4 class="name">100% предоплата</h4>
+
+                        <p class="text">
+                            Платите всю сумму сразу и получайте фантастическую скидку.
+                        </p>
+                    </div>
+
+                    <div class="payments__item">
+                        <div class="icon">
+                            <svg width="66" height="66">
+                                <use xlink:href="img/icons/sprite.svg#payment_two"></use>
+                            </svg>
+                        </div>
+
+                        <h4 class="name">Рассрочка на 3 года</h4>
+
+                        <p class="text">
+                            Мы предоставляем рассрочку. Пользуйтесь на здоровье прямо сейчас
+                        </p>
+                    </div>
+
+                    <div class="payments__item">
+                        <div class="icon">
+                            <svg width="66" height="66">
+                                <use xlink:href="img/icons/sprite.svg#payment_three"></use>
+                            </svg>
+                        </div>
+
+                        <h4 class="name">Лизинг</h4>
+
+                        <p class="text">
+                            Мы сотрудничаем с компаниями, любезно предоставляющими такую возможность
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="wrapper">
+
+                <h2 class="feedback__title">Узнать больше о <strong>MagnoLIA</strong></h2>
+                <form action="" class="form">
+                    <div class="form__wrap">
+                        <label class="form__item form__item_firstname">
+                            <p class="form__item-name">Ваше имя *</p>
+                            <input type="text" class="form__item-input error">
+                        </label>
+                        <label class="form__item form__item_phone">
+                            <p class="form__item-name">Телефон *</p>
+                            <input type="text" class="form__item-input">
+                        </label>
+    
+                        <label class="form__item form__item_comment">
+                            <p class="form__item-name">Ваш вопрос *</p>
+                            <textarea name="" id="" class="form__item-comment error"></textarea>
+                        </label>
                     </div>
     
-                    <div class="footer__rights">
-                        <div class="footer__rights-item alkor">
-                            <p>Alkor-Bio, 2008-2021</p>
-                        </div>
-                        <div class="footer__rights-item siluet">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-                            
-                            <rect y="0" fill="none" width="24" height="24"/>
-                            <path fill="#FFFFFF" d="M3.439,21.241c0.214,0.119,0.435,0.242,0.661,0.467c0.281,0.28,0.496,0.636,0.685,0.951
-                                c0.153,0.254,0.298,0.494,0.455,0.661c0.38,0.4,0.711,0.568,1.219,0.62C6.877,23.98,7.257,24,7.621,24
-                                c0.712,0,1.407-0.077,2.186-0.244c0.532-0.115,1.385-0.442,1.862-0.714c0.112-0.065,1.067-0.557,1.216-0.624
-                                c0.216-0.105,0.599-0.228,1.042-0.369c0.447-0.143,0.953-0.305,1.341-0.47c0.613-0.255,1.641-0.523,2.558-0.55
-                                c0.191-0.007,0.406-0.012,0.635-0.018c0.807-0.021,1.812-0.047,2.632-0.163c0.595-0.08,1.202-0.272,1.445-0.456
-                                c0.074-0.058,0.095-0.157,0.1-0.229c0.013-0.205-0.085-0.45-0.243-0.611c-0.03-0.03-0.058-0.06-0.086-0.09
-                                c-0.182-0.195-0.354-0.38-1.194-0.574c-0.311-0.073-0.608-0.108-0.907-0.108c-0.69,0-1.303,0.194-1.952,0.4
-                                c-0.154,0.049-0.311,0.099-0.472,0.147c-0.554,0.173-1.117,0.257-1.72,0.257c-0.43,0-0.834-0.043-1.174-0.085
-                                c-0.695-0.088-1.472-0.919-1.677-1.575c-0.215-0.659-0.255-1.24-0.132-1.883c0.116-0.604,0.346-1.057,0.568-1.494
-                                c0.06-0.119,0.12-0.236,0.177-0.356c0.276-0.592,1.298-1.881,1.656-2.267c0.595-0.647,1.016-1.124,1.424-1.584l0.18-0.203
-                                c0.167-0.191,0.333-0.401,0.526-0.645c0.252-0.319,0.537-0.681,0.906-1.101c0.429-0.481,0.674-0.789,0.984-1.179
-                                c0.114-0.143,0.237-0.298,0.382-0.478c0.241-0.311,0.649-1.006,0.715-1.324c0.067-0.304-0.05-0.61-0.197-0.721
-                                c-0.083-0.06-0.203-0.094-0.336-0.094c-0.187,0-0.368,0.066-0.497,0.181C19.096,5.199,18.737,5.7,18.357,6.23
-                                c-0.241,0.336-0.489,0.683-0.769,1.006c-0.341,0.401-0.681,0.761-1.009,1.108c-0.234,0.248-0.456,0.483-0.659,0.712
-                                c-0.315,0.352-0.598,0.683-0.865,0.994c-0.368,0.429-0.715,0.835-1.069,1.207c-0.375,0.393-0.802,0.61-1.204,0.61
-                                c-0.238,0-0.451-0.078-0.599-0.219c-0.385-0.363-0.194-1.146-0.048-1.448c0.091-0.191,0.191-0.387,0.415-0.827l0.392-0.773
-                                c0.302-0.6,0.681-1.499,1.159-2.746C14.274,5.4,14.505,4.88,14.748,4.33c0.248-0.56,0.529-1.195,0.801-1.877
-                                c0.343-0.862,0.205-1.384-0.084-1.52c-0.44-0.208-0.835-0.054-1.099,0.452c-0.359,0.692-0.577,1.173-1.738,3.97
-                                c-0.058,0.141-0.201,0.416-0.383,0.764c-0.238,0.459-0.535,1.03-0.8,1.6c-0.169,0.362-0.325,0.747-0.462,1.086
-                                c-0.301,0.744-0.519,1.282-0.778,1.441c-0.491,0.299-0.973,0.219-1.151-0.189C8.872,9.64,8.957,8.94,9.057,8.13
-                                c0.041-0.338,0.085-0.688,0.11-1.038c0.098-1.272,0.216-2.03,0.307-2.547c0.062-0.352,0.219-1.003,0.371-1.634
-                                c0.145-0.603,0.296-1.226,0.36-1.577c0.073-0.413,0.033-0.895-0.089-1.097C10.061,0.144,9.888,0,9.649,0
-                                C9.519,0,9.39,0.043,9.265,0.128C9.048,0.267,8.862,0.641,8.711,1.241C8.522,2.002,8.421,2.49,8.313,3.006
-                                C8.204,3.529,8.091,4.069,7.877,4.958C7.84,5.116,7.795,5.294,7.744,5.493C7.591,6.098,7.381,6.926,7.185,8.015
-                                c-0.053,0.3-0.089,0.626-0.127,0.971c-0.053,0.482-0.107,0.98-0.217,1.513c-0.069,0.319-0.438,0.577-0.62,0.645
-                                c-0.127,0.049-0.246,0.096-0.386,0.096c-0.179,0-0.356-0.075-0.572-0.244c-0.341-0.264-1.054-1.778-1.324-2.482
-                                C3.71,7.933,3.471,7.307,3.274,6.674C3.162,6.309,3.08,5.993,2.994,5.658c-0.119-0.462-0.242-0.94-0.462-1.617
-                                c-0.104-0.323-0.42-0.437-0.659-0.437c-0.057,0-0.111,0.007-0.152,0.019C1.557,3.671,1.342,3.787,1.362,4.241
-                                C1.394,4.954,1.64,5.967,1.689,6.163c0.248,0.971,0.427,1.504,0.676,2.241l0.216,0.64c0.207,0.609,0.421,1.239,0.6,1.965
-                                c0.167,0.681,0.263,1.686,0.033,2.46l-0.1,0.328c-0.228,0.747-0.572,1.876-0.816,2.965c-0.106,0.453-0.281,1.442-0.264,2.284
-                                c0.018,0.782,0.196,1.211,0.707,1.702C2.994,20.993,3.22,21.119,3.439,21.241z"/>
-                            <rect y="0" fill="none" width="24" height="24"/>
-                            </svg>
+                    <div class="form__footer">
+                        <label class="form__agree">
+                            <input type="checkbox" class="agree error" name="" id="">
+                            <div class="form__agree-text">Я соглашаюсь с <a href="javascript:;">Политикой конфиденциальности</a></div>
+                        </label>
+    
+                        <button class="form__submit" type="submit">Отправить</button>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <a href="index.html" class="logo logo_magnolia">
+                    <svg width="101" height="73">
+                        <use xlink:href="img/icons/sprite.svg#logo_magnolia"></use>
+                    </svg>
+                </a>
 
-                            <p><a href="javascript:;">Siluet Studio</a>: Web-silhouette of your business</p>
-                        </div>
+                <nav class="nav">
+                    <a href="javascript:;" class="nav__item">Реагенты</a>
+                    <a href="javascript:;" class="nav__item">Анализатор</a>
+                    <a href="javascript:;" class="nav__item">Сервис</a>
+                    <a href="javascript:;" class="nav__item">Програмное обеспечение</a>
+                    <a href="javascript:;" class="nav__item">Технология</a>
+                    <a href="javascript:;" class="nav__item">Расходные материалы</a>
+                    <a href="javascript:;" class="nav__item">Твердая фаза</a>
+                </nav>
+            </div>
+
+            <div class="footer__middle">
+                <a href="index.html" class="logo logo_alkor">
+                    <svg width="116" height="28">
+                        <use xlink:href="img/icons/sprite.svg#logo_alkor"></use>
+                    </svg>
+                </a>
+
+                <div class="contacts">
+                    <a href="javascript:;" class="contacts__phone">+7 (812) 677-87-79</a>
+                    <a href="javascript:;" class="contacts__mail">info@alkorbio.ru</a>
+                    <p class="contacts__address">192148, Санкт-Петербург, Железнодорожный пр., 40 А</p>
+                    <a href="javascript:;" class="contacts__download">
+                        <svg width="28" height="28">
+                            <use xlink:href="img/icons/sprite.svg#download"></use>
+                        </svg>
+                        Скачать каталог
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="rights">
+                    &#169; Alkor-Bio, 2008-2021                    
+                </div>
+
+                <div class="privacy">
+                    <a href="javascript:;" class="privacy__item">Карта сайта</a>
+                    <a href="javascript:;" class="privacy__item">Политика конфиденциальности</a>
+
+                    <div class="siluet">
+                        <svg width="18" height="16">
+                            <use xlink:href="img/icons/sprite.svg#siluet"></use>
+                        </svg>
+
+                        <p>Создание сайта: <a href="javascript:;">Студия Силуэт</a></p>
                     </div>
                 </div>
-                
             </div>
+            
         </div>
-    </footer> -->
-
+    </footer>
+<script src="js/libs/stats.js"></script>
+<script src="js/libs/PxLoader.js"></script>
+<script src="js/libs/PxLoaderImage.js"></script>
+<script type="text/javascript" src="js/libs/proton.min.js"></script>
 <script src="js/libs/jquery-3.2.1.min.js"></script>
 <script src="js/libs/jquery-ui.js"></script>
 <script src="js/jquery-ready.js"></script>
+<script src="js/common.js"></script>
+
 </body>
 </html>

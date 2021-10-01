@@ -67,6 +67,24 @@
             border: 3px solid @white;
             padding: 11px 75px 11px 20px;
             border-radius: 100px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 7px;
+                bottom: 0;
+                margin: auto;
+                content: '';
+                background-image: url("../img/icons/play.png");
+                background-size: 12px 14px;
+                background-position: 59% 50%;
+                background-repeat: no-repeat;
+                width: 40px;
+                height: 40px;
+                border: 2px solid @white;
+                border-radius: 100px;
+            }
         }
     }
 }

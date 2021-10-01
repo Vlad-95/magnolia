@@ -1,5 +1,5 @@
 .product {
-    padding: 70px 0;
+    padding: 70px 0 128px;
 
     &__wrap {
         display: grid;
@@ -64,6 +64,20 @@
             transition: 0.3s;
         }
 
+        .name {
+            font-size: 19px;
+            font-weight: 400;
+            color: @white;
+            position: absolute;
+            bottom: 19px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            line-height: 0.9;
+            max-width: 110px;
+            text-align: center;
+        }
+
         &_empty {
             opacity: 0.2;
             position: absolute;
@@ -74,39 +88,50 @@
                 }
             }
 
-            &:nth-of-type(1) {
+            &:nth-of-type(8) {
+                left: -14px;
+                top: -1px;
+            }
 
+            &:nth-of-type(9) {
+                top: 169px;
+                left: 584px;
+            }
+
+            &:nth-of-type(10) {
+                top: 500px;
+                left: 394px;
             }
         }
 
         &:not(.product__item_empty) {
             &:nth-of-type(1) {
-                transform: translateY(219px);
+                transform: translate(0px, 219px);
             }
 
             &:nth-of-type(2) {
-                transform: translateY(110px) translateX(-41px);
+                transform: translate(-41px, 110px);
             }
             
             &:nth-of-type(3) {
-                transform: translateY(0) translateX(-81px);
+                transform: translate(-81px, 0px);
             }
 
             &:nth-of-type(4) {
-                transform: translateY(239px) translateX(0px);
+                transform: translate(0px, 239px);
             }
 
             &:nth-of-type(5) {
-                transform: translateY(129px) translateX(-41px);
+                transform: translate(-41px, 129px);
             }
 
             &:nth-of-type(6) {
-                transform: translateY(18px) translateX(-81px);
+                transform: translate(-81px, 18px);
             }
 
             &:nth-of-type(7) {
                 margin-left: auto;
-                transform: translateY(-71px) translateX(2px);
+                transform: translate(2px, -71px);
             }
 
             &:hover {
@@ -122,5 +147,116 @@
             }
         }
         
+    }
+}
+
+.product-detail {
+    background-color: #121e21;
+    padding: 83px 0 76px;
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: minmax(min-content, 64%) minmax(min-content, 36%)
+    }
+
+    &__content {
+        padding-right: 90px;
+    }
+
+    &__title {
+        margin: 0 0 43px;
+        font-weight: 700;
+        color: @green;
+        font-size: 40px;
+    }
+
+    &__btns {
+        margin-top: 57px;
+        a {
+            border: 3px solid @white;
+            border-radius: 100px;
+            color: @green;
+            font-size: 17px;
+            position: relative;
+            margin-right: 12px;
+
+            &.order {
+                padding: 6px 49px 8px 12px;
+            }
+
+            &.close {
+                padding: 6px 41px 8px 12px;
+            }
+
+            .icon {
+                position: absolute;
+                fill: @green;
+                top: 0;
+                bottom: 0;
+                right: 15px;
+                margin: auto;
+            }
+        }
+    }
+
+    .wysiwig {
+        p,
+        ol,
+        ul {
+            font-size: 20px;
+            margin: 25px 0;
+        }
+
+        p {
+            line-height: 1.4;
+        }
+
+        a {
+            color: @green;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            padding: 0;  
+        }
+
+        ul {
+            li {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 16px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 7px;
+                    height: 7px;
+                    background-color: @green;
+                    border-radius: 100px;
+                    left: 0;
+                    top: 9px;
+                }
+            }
+        }
+
+        ol {
+            counter-reset: item;
+            li {
+                position: relative;
+                padding-left: 30px;
+                margin-bottom: 16px;
+                counter-increment: item;
+
+                &:before {
+                    content: counter(item)".";
+                    position: absolute;
+                    color: @green;
+                    font-size: 15px;
+                    left: 0;
+                    top: 2px;
+                }
+            }
+        }
     }
 }
