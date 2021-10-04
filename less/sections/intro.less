@@ -6,6 +6,7 @@
         position: absolute;
         height: 100%;
         width: 100%;
+        pointer-events: none;
 
         .bg {
             object-fit: cover;
@@ -84,6 +85,73 @@
                 height: 40px;
                 border: 2px solid @white;
                 border-radius: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .intro {
+        height: 460px;
+        
+        &__image {
+            .light-block {
+                height: 460px;
+            }
+        }
+
+        &__content {
+            padding-top: 160px;
+
+            .title {
+                font-size: 70px;
+            }
+
+            .subtitle {
+                font-size: 25px;
+                margin: 25px 0 50px;
+            }
+
+            .intro__btn {
+                font-size: 20px;
+
+                &:after {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .intro {
+        min-height: 400px;
+        height: auto;
+        padding-bottom: 40px;
+
+        &__image {
+            .light-block {
+                height: 100%;
+            }
+        }
+
+        &__content {
+            .title {
+                font-size: 50px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+            }
+
+            .intro__btn {
+                font-size: 17px;
+
+                &:after {
+                    width: 32px;
+                    height: 32px;
+                }
             }
         }
     }

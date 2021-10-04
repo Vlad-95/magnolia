@@ -6,6 +6,7 @@
     right: 0;
     margin: auto;
     z-index: 2;
+
     &__wrap {
         display: grid;
         grid-template-columns: 323px auto 188px;
@@ -19,6 +20,8 @@
 
         .logo_big {
             svg {
+                width: 148px;
+                height: 108px;
                 fill: @green;
             }
         }
@@ -26,6 +29,11 @@
         .logo_small {
             margin-left: 6px;
             margin-top: 12px;
+
+            svg {
+                width: 102px; 
+                height: 24px;
+            }
         }
     }
 
@@ -62,6 +70,79 @@
     .burger {
         position: absolute;
         display: none;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 21px;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 3px;
+            background-color: @green;
+            display: block;
+            border-radius: 100px;
+
+            &:nth-of-type(1) {
+                bottom: auto;
+            }
+
+            &:nth-of-type(3) {
+                top: auto;
+            }
+        }
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .header {
+        &__wrap {
+            grid-template-columns: 238px auto 150px;
+        }
+
+        .logos {
+            .logo_big {
+                svg {
+                    width: 130px;
+                    height: 95px;
+                }
+            }
+        }
+
+        .nav {
+            &__item {
+                font-size: 15px;
+            }
+        }
+
+        .phone {
+            font-size: 20px;
+            margin-top: -12px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        &__wrap {
+            grid-template-columns: auto;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .phone {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+        }
+    }
+}
