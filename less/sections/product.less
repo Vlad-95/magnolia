@@ -115,6 +115,8 @@
         }
 
         &:not(.product__item_empty) {
+            cursor: pointer;
+
             &:nth-of-type(1) {
                 top: 279px;
                 right: 568px;
@@ -169,6 +171,7 @@
 .product-detail {
     background-color: #121e21;
     padding: 83px 0 76px;
+    //display: none;
 
     &__wrap {
         display: grid;
@@ -179,6 +182,21 @@
         grid-template-columns: minmax(min-content, 56%) minmax(min-content, 36%);
         grid-template-rows: 57px minmax(min-content, 40px) 90px;
         column-gap: 90px;
+    }
+
+    &__item {
+        display: none;
+        height: 0;
+        
+        &.visible {
+            display: block;
+            height: 0;
+        }
+
+        &.animate {
+            height: auto;
+            transition: 0.5s;
+        }
     }
 
     &__img {

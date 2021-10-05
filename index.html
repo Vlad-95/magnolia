@@ -45,7 +45,6 @@
             <div class="intro__image">
                 <img src="img/intro-img.png" alt="" class="bg">
                 <img src="img/dots.png" alt="" class="dots">
-                <img src="img/light.png" alt="" class="light">
                 <div class="light-block"></div>
             </div>
 
@@ -99,7 +98,7 @@
                     <div class="product__content">
                         
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="reagents">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -111,7 +110,7 @@
                             <p class="name">Реагенты</p>
                         </div>
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="analisator">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -123,7 +122,7 @@
                             <p class="name">Анализатор</p>
                         </div>
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="phase">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -135,7 +134,7 @@
                             <p class="name">Твердая фаза</p>
                         </div>
                         
-                        <div class="product__item">
+                        <div class="product__item" data-item="technology">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -145,7 +144,7 @@
                             <p class="name">Технология</p>
                         </div>
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="service">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -157,7 +156,7 @@
                             <p class="name">Сервис</p>
                         </div>
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="soft">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -169,7 +168,7 @@
                             <p class="name">Програмное обеспечение</p>
                         </div>
 
-                        <div class="product__item">
+                        <div class="product__item" data-item="expendable">
                             <svg class="hexagon" viewBox="0 0 230 200">
                                 <polygon  points="60,2 170,2 228,100 170,198 60,198 2,100"/>
                             </svg>
@@ -207,41 +206,283 @@
 
         <section class="product-detail">
             <div class="wrapper">
-                <div class="product-detail__wrap">
-                    <h2 class="product-detail__title">Реагенты</h2>
-
-                        <div class="wysiwig">
-                            <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
-                            
-                            <ul>
-                                <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
-                                <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
-                                <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
-                            </ul>
-
-                            
+                <div class="product-detail__item" data-item="reagents">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Реагенты</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
                         </div>
-
-                        <div class="product-detail__btns">
-                            <a href="javascript:;" class="order">
-                                Заказать
-
-                                <svg width="20" height="14" class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#mail"></use>
-                                </svg>
-                            </a>
-
-                            <a href="javascript:;" class="close">
-                                Закрыть
-
-                                <svg width="14" height="14" class="icon">
-                                    <use xlink:href="img/icons/sprite.svg#close"></use>
-                                </svg>
-                            </a>
+                    </div>
+                </div>
+                
+                <div class="product-detail__item" data-item="analisator">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Анализатор</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
                         </div>
+                    </div>
+                </div>
 
-                    <div class="product-detail__img">
-                        <img src="img/intro-img.png" alt="">
+                <div class="product-detail__item" data-item="phase">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Твердая фаза</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__item" data-item="technology">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Технология</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__item" data-item="service">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Сервис</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__item" data-item="soft">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Програмное обеспечение</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__item" data-item="expendable">
+                    <div class="product-detail__wrap">
+                        <h2 class="product-detail__title">Расходные материалы</h2>
+    
+                            <div class="wysiwig">
+                                <p>Все наборы реагентов выпускаются в разных комплектациях: 50, 100, 200 и 500 определений в зависимости от методики</p>
+                                
+                                <ul>
+                                    <li>Выбор наиболее подходящей под вашу потребность фасовки.</li>
+                                    <li>Компактные наборы реагентов MagnoLIA легко хранить в холодильнике</li>
+                                    <li>Жидкие, готовые к использованию реагенты удобны в применении</li>
+                                </ul>
+    
+                                
+                            </div>
+    
+                            <div class="product-detail__btns">
+                                <a href="javascript:;" class="order">
+                                    Заказать
+    
+                                    <svg width="20" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#mail"></use>
+                                    </svg>
+                                </a>
+    
+                                <a href="javascript:;" class="close">
+                                    Закрыть
+    
+                                    <svg width="14" height="14" class="icon">
+                                        <use xlink:href="img/icons/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                            </div>
+    
+                        <div class="product-detail__img">
+                            <img src="img/intro-img.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>

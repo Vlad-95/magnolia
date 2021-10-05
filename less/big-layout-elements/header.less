@@ -5,7 +5,7 @@
     top: 0;
     right: 0;
     margin: auto;
-    z-index: 2;
+    z-index: 3;
 
     &__wrap {
         display: grid;
@@ -74,6 +74,27 @@
         top: 0;
         width: 30px;
         height: 21px;
+        z-index: 4;
+
+        &.active {
+            span {
+                background-color: @white;
+
+                &:nth-of-type(1) {
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                &:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                    bottom: 9px;
+                }
+            }
+        }
 
         span {
             position: absolute;
@@ -87,6 +108,9 @@
             background-color: @green;
             display: block;
             border-radius: 100px;
+            transition: 0.5s;
+            transform: rotate(0);
+            opacity: 1;
 
             &:nth-of-type(1) {
                 bottom: auto;
@@ -95,6 +119,54 @@
             &:nth-of-type(3) {
                 top: auto;
             }
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        overflow: auto;
+        width: 80%;
+        background-color: @green;
+        z-index: 3;
+        padding: 80px 40px 40px;
+        display: none;
+        transition: 0.5s;
+
+        &.visible {
+            display: block;
+            right: -100%;
+        }
+
+        &.animate {
+            right: 0;
+            transition: 0.5s;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0;
+            
+            &__item {
+                border: none;
+                color: @white;
+                padding: 8px 0;
+                font-size: 17px;
+
+                &:not(:first-of-type) {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .phone {
+            display: inline-block;
+            color: @white;
+            margin-top: 40px;
         }
     }
 }
