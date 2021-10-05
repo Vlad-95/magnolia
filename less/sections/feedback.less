@@ -13,7 +13,7 @@
     &__wrap {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 40px;
+        column-gap: 40px;
         grid-template-areas:"firstname comment"  
                             "phone comment";
     }
@@ -145,4 +145,47 @@
         padding: 9px 17px;
     }
     
+}
+
+@media screen and (max-width: 1200px) {
+    .feedback {
+        padding: 50px 0;
+    }
+
+    .form {
+        &__item {
+            &-name {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form {
+        &__wrap {
+            column-gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form {
+        &__wrap {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            grid-template-areas:"firstname"  
+                                "phone"
+                                "comment";
+        }
+
+        &__footer {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__submit {
+            margin-top: 30px;
+        }
+    }
 }

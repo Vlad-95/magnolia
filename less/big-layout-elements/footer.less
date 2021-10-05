@@ -2,8 +2,8 @@
 
     &__top {
         display: grid;
-        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 306px));
-        grid-column-gap: 16px;
+        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 290px));
+        column-gap: 16px;
         align-items: center;
         border-top: 1px solid @green;
         padding: 15px 0 18px;
@@ -11,17 +11,17 @@
 
     &__middle {
         display: grid;
-        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 306px));
-        grid-column-gap: 16px;
+        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 290px));
+        column-gap: 16px;
         align-items: center;
         border-top: 1px solid rgba(225, 227, 224, 0.1);
-        padding: 10px 0 11px;
+        padding: 18px 0 20px;
     }
 
     &__bottom {
         display: grid;
-        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 306px));
-        grid-column-gap: 16px;
+        grid-template-columns: minmax(min-content, 290px) minmax(min-content, calc(100% - 290px));
+        column-gap: 16px;
         align-items: center;
         border-top: 1px solid rgba(225, 227, 224, 0.1);
         padding: 19px 0;
@@ -31,15 +31,24 @@
         position: relative;
         justify-self: start;
 
-        &_magnolia {          
+        &_magnolia {       
+               
             svg {
+                width: 101px;
+                height: 73px;
                 fill: @green;
+            }
+        }
+
+        &_alkor {
+            svg {
+                width: 116px;
+                height: 28px;
             }
         }
     }
 
     .nav {
-    
         display: flex;
 
         &__item {
@@ -72,6 +81,7 @@
         &__address {
             font-size: 15px;
             font-weight: 300;
+            margin: 0;
         }
 
         &__download {
@@ -124,6 +134,88 @@
 
             p {
                 margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {    
+        &__top {
+            grid-template-columns: minmax(min-content, 150px) minmax(min-content, calc(100% - 150px));
+        }
+
+        &__middle {
+            grid-template-columns: minmax(min-content, 150px) minmax(min-content, calc(100% - 150px));
+        }
+
+        &__bottom {
+            grid-template-columns: minmax(min-content, 150px) minmax(min-content, calc(100% - 150px));
+        }
+
+        .nav {
+            &__item {
+                font-size: 14px;
+                
+                &:not(:last-of-type) {
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .contacts {
+            &__phone {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {    
+        &__top {
+            grid-template-columns: 1fr;
+        }
+
+        &__middle {
+            padding-top: 18px;
+            grid-template-columns: 1fr;
+        }
+
+        &__bottom {
+            grid-template-columns: 1fr;
+        }
+
+        .nav {
+            flex-wrap: wrap;
+            margin-top: 10px;
+
+            &__item {
+                margin-top: 10px;
+            }
+        }
+
+        .contacts {
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+
+            *:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .privacy {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 15px;
+
+            *:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            .siluet {
+                margin-left: 0;
             }
         }
     }
