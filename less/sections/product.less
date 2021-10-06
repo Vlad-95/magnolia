@@ -36,6 +36,15 @@
         border: 3px solid @white;
         border-radius: 100px;
         padding: 7px 15px;
+        background-color: transparent;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: @green;
+            color: @white;
+            border-color: @green;
+        }
+
     }
 
     &__content {
@@ -86,6 +95,18 @@
             line-height: 0.9;
             max-width: 110px;
             text-align: center;
+        }
+
+        &.active {
+            .hexagon {
+                polygon {
+                    fill: @green;
+                }
+            }
+
+            .icon {
+                fill: @white;
+            }
         }
 
         &_empty {
@@ -171,7 +192,7 @@
 .product-detail {
     background-color: #121e21;
     padding: 83px 0 76px;
-    //display: none;
+    display: none;
 
     &__wrap {
         display: grid;
@@ -186,17 +207,6 @@
 
     &__item {
         display: none;
-        height: 0;
-        
-        &.visible {
-            display: block;
-            height: 0;
-        }
-
-        &.animate {
-            height: auto;
-            transition: 0.5s;
-        }
     }
 
     &__img {
