@@ -92,4 +92,55 @@ $(document).ready(function() {
     productCloseBtn.click(hideProductItem);
 
     //========ПРОДУКЦИЯ ГЕКСЫ (КОНЕЦ)
+
+    //========Преимущества=====
+    
+    //открытие по клику
+    function showAdvantage () {
+        advantageFlag = true;
+        let currentAdvantage = $(this).closest('.advantages__item');
+        let currentAdvantageData = currentAdvantage.attr('data-item');
+        let advantagesContent = $('.advantages-content');
+        let currentAdvantageContent = $('.advantages-content__item[data-item="'+ currentAdvantageData +'"]');
+
+        $('html, body').animate({scrollTop: $('.advantages').offset().top}, 300)
+        currentAdvantage.removeClass('opacity').siblings().not('.advantages__item_main').addClass('opacity');
+        advantagesContent.fadeIn();
+        currentAdvantageContent.fadeIn().siblings('.advantages-content__item').hide();
+        //пагинация
+        $('.pagination__item').eq(currentAdvantage.index() - 1).addClass('active');
+    }
+
+    //закрытие по лику
+    function hideAdvantage () {        
+        let advantagesContent = $('.advantages-content');
+        let advantagesContentItem = $('.advantages-content__item');
+        
+        $('.advantages__item').removeClass('opacity');
+        $('.pagination__item').removeClass('active');
+        advantagesContent.fadeOut();
+        advantagesContentItem.fadeOut();
+        
+    }
+
+    // пагинация
+    function advantagesPag () {
+        let targetPage = $(this).not('.active');
+        let targetPageData = targetPage.attr('data-item');
+        let targetAdvantagesContentItem = $('.advantages-content__item[data-item="'+ targetPageData +'"]');
+
+        targetPage.addClass('active').siblings().removeClass('active');
+        targetAdvantagesContentItem.fadeIn().siblings('.advantages-content__item').hide();
+
+    }
+
+    $('.advantages-content .close').click(hideAdvantage);
+
+    $('.advantages__item .btn').click(showAdvantage);
+    
+    $('.pagination__item').click(advantagesPag);
+
+    
+
+    //========Преимущества КОНЕЦ=========
 });
