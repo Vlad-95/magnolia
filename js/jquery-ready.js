@@ -62,6 +62,21 @@ $(document).ready(function() {
     let productBlock = $('.product-detail');
     let productCloseBtn = $('.product-detail__btns .close');
 
+    // переменные для скролла
+    let allProductItems = $('.product__item');
+    let windowHeight = $(window).height();
+
+    // анимация закрашивания
+    $(window).scroll(function() {
+        
+        allProductItems.each(function() {
+            if (($(this).offset().top - $(window).scrollTop()) < windowHeight / 2) {
+                $(this).addClass('anim')
+            }
+            
+        })
+    })
+
     // функция показа соответствующейго блока
     function showProductItem () {
         let currentItem = $(this);
