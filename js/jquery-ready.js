@@ -7,7 +7,7 @@ $(document).ready(function() {
     let nav = header.find('.nav');
     let phone = header.find('.phone');
     let burger = $('.burger');
-
+    let windowHeight = $(window).height();
 
     if (windowWidth <= 992) {
         //создаем контейнер для менюшки
@@ -64,14 +64,13 @@ $(document).ready(function() {
 
     // переменные для скролла
     let allProductItems = $('.product__item');
-    let windowHeight = $(window).height();
 
     // анимация закрашивания
     $(window).scroll(function() {
         
         allProductItems.each(function() {
             if (($(this).offset().top - $(window).scrollTop()) < windowHeight / 2) {
-                $(this).addClass('anim')
+                $(this).addClass('anim');
             }
             
         })
@@ -155,7 +154,29 @@ $(document).ready(function() {
     
     $('.pagination__item').click(advantagesPag);
 
-    
-
     //========Преимущества КОНЕЦ=========
+
+    //паралакс эффект
+    function parallax (evt) {
+        let parallaxItem = $('.parallax');
+        let scrolled = $(window).scrollTop();
+
+        parallaxItem.each(function() {
+            let currentItemDelay = $(this).attr('data-parallax-delay')
+            
+            $(this).css('top',(0 - (scrolled*currentItemDelay))+'px');
+        })
+    }
+
+    $(window).scroll(parallax);
+
+    // появление элементов
+    $(window).scroll(function () {
+        $('.fade').each(function() {
+            if (($(this).offset().top - $(window).scrollTop()) < windowHeight / 2) {
+                $(this).addClass('anim');
+            }
+        })
+    })
+
 });
