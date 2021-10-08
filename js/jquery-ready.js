@@ -168,9 +168,9 @@ $(document).ready(function() {
         })
     }
 
-    if ($(window).width() >= 992) {
-        $(window).scroll(parallax);
-    }
+    // if ($(window).width() >= 992) {
+    //     $(window).scroll(parallax);
+    // }
 
     
 
