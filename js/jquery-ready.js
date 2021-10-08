@@ -168,7 +168,11 @@ $(document).ready(function() {
         })
     }
 
-    $(window).scroll(parallax);
+    if ($(window).width() >= 992) {
+        $(window).scroll(parallax);
+    }
+
+    
 
     // появление элементов
     $(window).scroll(function () {
